@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vNnJ1hBE_AN4JpLm8uFyIZZlJypZ3VE&callback=initMap&libraries=places"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="button back-button">Back</a>
+        <h1>Website Name</h1>
+    </header>
+
+    <section class="dropdown-section">
+        <select id="food-stall-dropdown" onchange="selectFoodStall()">
+            <option value="" disabled selected>Select Your Food Option</option>
+            <option value="1">Food Stall 1 - Budget</option>
+            <option value="2">Food Stall 2 - Affordable</option>
+            <option value="3">Food Stall 3 - Moderate</option>
+            <option value="4">Food Stall 4 - Pricey</option>
+            <option value="5">Food Stall 5 - Premium</option>
+        </select>
+    </section>
+
+    <div id="map"></div>
+
+    <div id="directions-panel"></div>
+
+    <footer>
+        <a href="#" class="button">Menu</a>
+        <a href="#" class="button">Contact</a>
+    </footer>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
